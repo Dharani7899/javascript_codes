@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>converter(celsius to farenhit)</title>
+  </head>
+  <body>
+    <input type="text" id="inn" />
+    <button id="buu" onclick="conn()">click</button>
+    <div id="result"></div>
+    <script>
+      function conn() {
+        let vall = Number(document.getElementById("inn").value);
+        let bu = document.getElementById("buu");
+        let far = (vall * 9) / 5 + 32;
+        result.innerHTML = far + "F";
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AreaOfCircle</title>
+  </head>
+  <body>
+    <script>
+      /*
+      let AOC = (r) => {
+        return Number(Math.PI * r * r);
+      };
+      console.log(`the area of the square is${AOC(5)}`);*/
+
+      //variable argument
+      let product = function (...args) {
+        let result = 1;
+        for (let val of args) {
+          result *= val;
+        }
+        return result;
+      };
+      console.log(product(1, 2, 3, 4, 5));
+    </script>
+  </body>
+</html>
