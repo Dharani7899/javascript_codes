@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <script>
+      var emp = new Object();
+      emp.id = 1;
+      emp.name = "priyanka";
+      emp.salary = 30000;
+      document.writeln("<h3>Obect creating by using new method</h3>");
+      document.writeln(
+        `hai ${emp.name} how are you and your id is ${emp.id}<br>`
+      );
+
+      for (value in emp) {
+        document.writeln(emp[value] + " ");
+      }
+    </script>
+  </body>
+</html>

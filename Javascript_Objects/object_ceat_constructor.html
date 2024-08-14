@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function employee(name, age, salary) {
+        this.name = "kavi";
+        this.age = 21;
+        this.salary = 30000;
+      }
+      var empp = new employee("dharani", 22, 5000);
+      document.writeln("Objects details of employee object:");
+      for (value in empp) {
+        document.write(empp[value] + " ");
+      }
+    </script>
+  </body>
+</html>

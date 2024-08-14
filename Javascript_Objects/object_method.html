@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function employee(name, age, salary) {
+        (this.name = name),
+          (this.age = age),
+          (this.salary = salary),
+          (this.updatedsalary = updatedsalary);
+        function changesalary(upda) {
+          this.salary = upda;
+        }
+      }
+      var e = new employee("dharani", 21, 5000);
+      document.writeln(e.name + " " + e.age + " " + e.salary);
+      employee.changesalary(6000);
+      document.writeln("after the uadtion of salary:" + " " + e.salary);
+    </script>
+  </body>
+</html>
