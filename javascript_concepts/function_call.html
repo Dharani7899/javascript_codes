@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Emp(id, name) {
+        this.id = id;
+        this.name = name;
+      }
+      function Pemp(id,name) {
+        Emp.call(this, id, name);
+      }
+      function Temep(id,name) {
+        Emp.call(this, id, name);
+      }
+      var p = new Pemp(2, "dharani");
+      var t = new Temep(6, "dhara");
+      document.writeln(p.id + " " + p.name);
+      document.writeln(t.id + " " + t.name);
+    </script>
+  </body>
+</html>

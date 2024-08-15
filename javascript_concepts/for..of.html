@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //for...of can be used with array and string to be iterated!! and it is not used with objects
+      //   var fruits = {
+      //     name: "apple",
+      //     color: ["red", "green"],
+      //     taste: "sweet",
+      //   };
+      //   for (val of fruits) {
+      //     document.write(fruits[val] + " ");
+      //   }
+      var fruits = ["apple", "mango", "orange"];
+      for (valu of fruits) {
+        document.write(valu + " ");
+      }
+
+      //let us write how many times a appear
+      var words = "hai all";
+      var count = 0;
+      for (x of words) {
+        if (x == "a") {
+          count++;
+        }
+      }
+      document.write(`the count of a appears ${count} times`);
+    </script>
+  </body>
+</html>
