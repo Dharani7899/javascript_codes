@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //using apply() function  we can find max and min values!!
+      arr = [3, 4, 5, 6, 7, 8, 9, 10];
+      var max = Math.max.apply(this, arr);
+      var min = Math.min.apply(this, arr);
+      document.write(max);
+      document.write("<br>");
+      document.write(min);
+      //To join two arrays
+      var arr = [9, 2, 3, 4];
+      var arr1 = [10, 100, 1];
+      var joinn = arr.push.apply(arr, arr1);
+      document.write(joinn);
+    </script>
+  </body>
+</html>

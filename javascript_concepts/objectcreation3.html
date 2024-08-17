@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //obect creation using function of this keyword
+      function details(name, salary, id) {
+        this.name = name;
+        this.salary = salary;
+        this.id = id;
+      }
+
+      var emp1 = new details("dharani", 90000, 17);
+      var emp2 = new details("dharani", 90000, 17);
+      document.write(`${emp1.name}  ${emp1.salary} ${emp1.id}`);
+      document.write(`${emp1.name}  ${emp1.salary} ${emp1.id}`);
+    </script>
+  </body>
+</html>

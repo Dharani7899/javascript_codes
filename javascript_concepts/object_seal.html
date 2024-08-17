@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Oject.Seal() property
+      var object1 = {
+        name: "priya",
+      };
+      var object2 = Object.seal(object1);
+      object2.name = "kavi";
+      document.write(object1.name);
+      document.write(object2.name);
+      delete object2.name;
+      document.write(object2.name);
+      var isSealed = Object.isSealed(object2);
+
+      document.write(isSealed); //need to be print as a ture
+    </script>
+  </body>
+</html>
