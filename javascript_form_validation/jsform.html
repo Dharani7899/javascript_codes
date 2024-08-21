@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+    <style>
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function validateForm() {
+        var name = document.myform.name.value;
+        var password = document.myform.password.value;
+        var repass = document.myform.repassword.value;
+        var telephone = document.myform.telephone.value;
+        var telephonePattern = /^[0-9]{10}$/; // Adjust the pattern as needed
+
+        if (name == null || name == "") {
+          alert("Please enter name:");
+          return false;
+        } else if (password.length < 6) {
+          alert("The password must be at least 6 characters long");
+          return false;
+        } else if (password != repass) {
+          alert("Password does not match");
+          return false;
+        } else if (!telephonePattern.test(telephone)) {
+          document.getElementById("errorTelephone").innerText =
+            "Entered telephone number is incorrect";
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+    <h3>Registration form</h3>
+    <form name="myform" method="post" onsubmit="return validateForm()">
+      Name: <input type="text" name="name" /><br />
+      Password:<input type="password" name="password" /><br />
+      Confirm Password:<input type="password" name="repassword" /><br />
+
+      Telephone no:<input type="tel" name="telephone" /><span
+        id="errorTelephone"
+      ></span>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

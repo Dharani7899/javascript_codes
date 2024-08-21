@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let test = function () {
+        console.log("without param");
+      };
+      let test1 = function (a) {
+        console.log("one param", a);
+      };
+      let test2 = function (a, b) {
+        console.log("two param", a, b);
+      };
+      test();
+      test1(9);
+      test2(9, 8);
+
+      let ttest = () => {
+        document.write("test");
+      };
+      let ttest1 = (a) => {
+        document.write("test1", a);
+      };
+      let ttest2 = (a, b) => {
+        document.write("test3", a, b);
+      };
+
+      ttest();
+      ttest1(3);
+      ttest2(3, 4);
+    </script>
+  </body>
+</html>
